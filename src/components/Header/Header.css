@@ -1,3 +1,7 @@
 .nav-logo img{
     width: 8%;
 }
+.hover:hover{
+    color: rgb(255, 145, 0);
+    transition: 0.3s;
+}

@@ -12,9 +12,9 @@ const Header = () => {
                     <h3 className='text-white'>WebTesty</h3>
                 </div>
                 <div className='nav-item'>
-                    <Link className='text-decoration-none text-white fs-4 pe-4' to="/topic">Topic</Link>
-                    <Link className='text-decoration-none text-white fs-4 pe-4' to="/static">Statics</Link>
-                    <Link className='text-decoration-none text-white fs-4' to ="/blog">Blog</Link>
+                    <Link className='text-decoration-none text-white fs-4 pe-4' to ="/topic"><span className='hover'>Topic</span></Link>
+                    <Link className='text-decoration-none text-white fs-4 pe-4' to ="/static"><span className='hover'>Statics</span></Link>
+                    <Link className='text-decoration-none text-white fs-4 pe-4' to ="/blog"><span className='hover'>Blog</span></Link>
                 </div>
             </div>
         </div>
