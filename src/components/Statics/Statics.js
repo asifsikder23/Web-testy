@@ -15,7 +15,7 @@ const Statics = () => {
         <>
 
             <div className='d-none d-md-flex justify-content-center mt-2 mt-md-5 mx-auto'>
-                <BarChart width={400} height={500} data={cardData}>
+                <BarChart width={600} height={500} data={cardData}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="name" />
                     <YAxis />
@@ -24,6 +24,7 @@ const Statics = () => {
                     <Bar dataKey="total" fill="#8884d8" />
                 </BarChart>
             </div>
+            
             <div className='d-block d-md-none justify-content-center mt-5 mx-auto'>
                 <BarChart width={350} height={400} data={cardData}>
                     <CartesianGrid strokeDasharray="3 3" />

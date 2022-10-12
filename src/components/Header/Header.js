@@ -19,11 +19,13 @@ const Header = () => {
                     </button>
                 
                     <div className='nav-item collapse navbar-collapse' id="navbarSupportedContent">
+
                      <Link className='text-decoration-none text-white fs-4 pe-4'  to ="/topic"><span className='hover'>Topic</span></Link>
 
                      <Link className='text-decoration-none text-white fs-4 pe-4' to ="/static"><span className='hover'>Statics</span></Link>
 
                      <Link className='text-decoration-none text-white fs-4 pe-4' to ="/blog"><span className='hover'>Blog</span></Link>
+
                  </div>
                     
 

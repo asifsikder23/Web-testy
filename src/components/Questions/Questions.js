@@ -10,7 +10,7 @@ const Questions = ({question}) => {
     const {options, correctAnswer} = question;
     const showAns =()=>{
         Swal.fire(
-            'Good job!',
+            'CORRECT ANSWER!',
             `${correctAnswer}`,
             'success'
           )
