@@ -19,7 +19,7 @@ const Topic = () => {
             </div>
             </div>
             <hr />
-            <div className="container row row-cols-1 row-cols-md-3 g-4 container m-5">
+            <div className="container row row-cols-1 row-cols-md-3 g-4 container mx-auto">
                 {
                     data.map(quizData => <Quiz
                     key={quizData.id}

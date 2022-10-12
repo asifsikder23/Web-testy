@@ -7,19 +7,18 @@ import Questions from '../Questions/Questions';
 const StartQuiz = () => {
     const quizData = useLoaderData();
     const {questions} = quizData.data;
-    console.log(questions);
     return (
         <div className='container mt-4'>
-            <div className='d-flex justify-content-between'>
+            <div className=' container d-flex justify-content-between mx-auto'>
                 <div className='d-flex align-items-center gap-2'>
-                    <ListBulletIcon className="h-6 w-6 text-blue-500 icon"/>
+                    <ListBulletIcon className="icon"/>
                     <h4>{quizData.data.questions.length} quetions</h4>
                 </div>
                 <div>
                     <h2>Topic: {quizData.data.name}</h2>
                 </div>
             </div>
-            <div className='bg-dark text-white p-5 m-5'>
+            <div className='bg-dark text-white p-md-5 m-md-5'>
                 {
                     questions.map(question=> <Questions
                     question={question}
