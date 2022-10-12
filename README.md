@@ -3,7 +3,7 @@ The Website contains some quiz with HTML, CSS, JS, REACT.
 This Website is built with react.
 
 ## Live Page
-Netlify Link: [Code Quiz](https://web-testy23.netlify.app/)
+Netlify Link: [Web Testy](https://web-testy23.netlify.app/)
 
 ## React JS
 Documention Link: [React](https://reactjs.org/)
