@@ -13,8 +13,8 @@ const Footer = () => {
                 </div>
                 <div className="footer-menu">
                 <a href="/">Contact Us</a>
-                <a href="/">Terms of Dervices</a>
-                <a href="/">Privecy Policy</a>
+                <a href="/">Terms of Services</a>
+                <a href="/">Privacy Policy</a>
                 <a href="/">Privacy Settings</a>
                 </div>
             </div>
