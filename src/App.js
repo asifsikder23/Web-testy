@@ -36,18 +36,19 @@ function App() {
 
     {path: '/static', element: <Statics></Statics>},
     {path: '/blog', element: <Blog></Blog>}
-
     ]},
     {
       path: '*',
       element: <Error></Error>
     }
+    
   ])
   
   return (
     <div className="App">
       <RouterProvider router={router}></RouterProvider>
     </div>
+    
   );
 }
 
