@@ -6,10 +6,10 @@ This Website is built with react.
 Netlify Link: [Web Testy](https://web-testy23.netlify.app/)
 
 ## React JS
-Documention Link: [React](https://reactjs.org/)
+Documentation Link: [React](https://reactjs.org/)
 
 ## React Router
-Documention Link: [React Router Dom](https://reactrouter.com/en/v6.3.0)
+Documentation Link: [React Router Dom](https://reactrouter.com/en/v6.3.0)
 
 ## Resources
 - [Bootstrap](https://getbootstrap.com/)
