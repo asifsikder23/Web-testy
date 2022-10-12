@@ -16,7 +16,7 @@ const Home = () => {
                    </h3>
                </div>
                <div className='d-flex justify-content-center'>
-               <a href='topic' type="button" class="btn btn-danger ">Get Started</a>
+               <a href='topic' type="button" className="btn btn-danger ">Get Started</a>
                </div>
 
            </section>
