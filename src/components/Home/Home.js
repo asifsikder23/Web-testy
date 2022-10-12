@@ -15,8 +15,8 @@ const Home = () => {
                    Fortunately, human forgetting follows a pattern. We forget exponentially. A graph of our likelihood of getting the correct answer on a quiz sweeps quickly downward over time and then levels off.
                    </h3>
                </div>
-               <div className='d-flex justify-content-center'>
-               <a href='topic' type="button" className="btn btn-danger ">Get Started</a>
+               <div className='d-flex justify-content-center p-4'>
+               <a href='topic' type="button" className="btn btn-danger">Get Started</a>
                </div>
 
            </section>
