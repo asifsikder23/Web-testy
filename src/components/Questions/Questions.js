@@ -1,78 +1,44 @@
 import React from 'react';
 import './Quetions.css'
+import { EyeIcon } from '@heroicons/react/24/solid';
+import Options from '../Options/Options';
+import Swal from 'sweetalert2';
+
 
 const Questions = ({question}) => {
+    console.log(question);
+    const {options, correctAnswer} = question;
+    const showAns =()=>{
+        Swal.fire(
+            'Good job!',
+            `${correctAnswer}`,
+            'success'
+          )
+    }
     return (
-        <div className='p-3 p-md-5 m-3 m-md-5 mx-auto'>
+        <div className='p-3 p-md-2 m-3 m-md-0 mx-auto'>
+
+            <div className='d-flex justify-content-end m-md-3'>
+            <EyeIcon onClick={showAns} className="eye"/>
+            </div>
+
             <h3>Q: {question.question}</h3>
+
             <p>Choose the correct answer:</p>
 
             <div className="container mx-auto">
                     <div className="row g-2">
-                        <div className="col-md-6">
-                            <div className="p-3 border bg-light">
-
-                                <label className={`text-black rounded`}>
-                                    <input
-                                        // onClick={() => hendleAddToCart(option, correctAnswer)}
-                                        type="radio"
-                                        name="radio-6"
-                                        className={`radio checked:bg-danger mx-2`}
-                                        value={question.options[0]}
-                                    />
-                                    <span>{question.options[0]}</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="p-3 border bg-light">
-
-                                <label className={`text-black rounded`}>
-                                    <input
-                                        // onClick={() => hendleAddToCart(option, correctAnswer)}
-                                        type="radio"
-                                        name="radio-6"
-                                        className={`radio checked:bg-danger mx-2`}
-                                        value={question.options[1]}
-                                    />
-                                    <span>{question.options[1]}</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="p-3 border bg-light">
-
-                                <label className={`text-black rounded`}>
-                                    <input
-                                        // onClick={() => hendleAddToCart(option, correctAnswer)}
-                                        type="radio"
-                                        name="radio-6"
-                                        className={`radio checked:bg-danger mx-2`}
-                                        value={question.options[2]}
-                                    />
-                                    <span>{question.options[2]}</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="p-3 border bg-light">
-
-                                <label className={`text-black rounded`}>
-                                    <input
-                                        // onClick={() => hendleAddToCart(option, correctAnswer)}
-                                        type="radio"
-                                        name="radio-6"
-                                        className={`radio checked:bg-danger mx-2`}
-                                        value={question.options[3]}
-                                    />
-                                    <span>{question.options[3]}</span>
-                                </label>
-                            </div>
-                        </div>
+                        
+                        {
+                            options.map(option=><Options
+                                correctAnswer= {correctAnswer}
+                            option={option}
+                            ></Options>)
+                        }
                         
                     </div>
 
-                    </div>
+            </div>
 
         </div>
     );

@@ -19,6 +19,8 @@ const StartQuiz = () => {
                 </div>
             </div>
             <div className='bg-dark text-white p-md-5 m-md-5'>
+
+            
                 {
                     questions.map(question=> <Questions
                     question={question}

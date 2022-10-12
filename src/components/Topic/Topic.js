@@ -8,7 +8,7 @@ const Topic = () => {
     console.log(data);
     return (
         <div>
-            <div className='container block d-md-flex justify-content-center align-items-center px-5 gap-5'>
+            <div className='container block d-md-flex justify-content-center align-items-center py-5 gap-5'>
             <img className='img-fluid' src="https://assets.telegraphindia.com/telegraph/2022/Feb/1644310959_tata-quiz-1.jpg" alt="" />
             <div>
                 <h2>What is the importance of quiz?</h2>
@@ -19,7 +19,7 @@ const Topic = () => {
             </div>
             </div>
             <hr />
-            <div className="container row row-cols-1 row-cols-md-3 g-4 container mx-auto">
+            <div className="container row row-cols-1 row-cols-md-3 g-4 container mx-auto pt-5">
                 {
                     data.map(quizData => <Quiz
                     key={quizData.id}
